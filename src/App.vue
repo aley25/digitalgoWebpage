@@ -1,18 +1,38 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="mt-0">
+    <main>
+      <dg-header></dg-header>
+
+      <router-view>
+        
+      </router-view>
+
+      <dg-footer></dg-footer>
+    </main>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import DgHeader from '@/components/DgHeader.vue'
+import DgFooter from '@/components/DgFooter.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    DgHeader,
+    DgFooter
+  },
+  data() {
+    return {
+      links: [
+        {
+          title: 'Home',
+          to: { name: 'home' }
+        }
+      ]
+    }
+  },
 }
 </script>
 
