@@ -1,6 +1,6 @@
 <template>
 
-<div class="justify-center px-8 py-6 gradientegris" id="contactenos">
+<div class="justify-center px-8 py-10 gradientegris" id="contactenos">
     <div>
       <h1 class="font-gill-sans text-lg text-white pb-5">Más que una empresa, somos un aliado para hacer crecer su organización
         Contactenos.
