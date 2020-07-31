@@ -1,6 +1,6 @@
 <template>
 <div class="font-lora">
-  <div class="justify-center pt-8" id="portafolio">
+  <div class="justify-center pt-12 md:pt-16" id="portafolio">
 
     <div class="bg-red-1000 py-6 md:flex md:flex-row-reverse">
 
@@ -99,50 +99,20 @@
 
   </div>
 
-  <div class="justify-center px-8 py-6 gradientegris" id="contactenos">
-    <div>
-      <h1 class="font-gill-sans text-lg text-white pb-5">Más que una empresa, somos un aliado para hacer crecer su organización
-        Contactenos.
-      </h1>
-    </div>
-    <div class="">
-      <form action="">
-        
-        <div class="md:flex">
-          <div class="md:w-1/2 form-group md:px-5">
-            <label class="text-white" for="nombre">Nombre completo:  </label>
-            <input type="text" id="nombre" class="form-control">
-          </div>
-            
-          <div class="md:w-1/2 form-group md:px-5">
-            <label class="text-white" for="email">Correo Electronico</label>
-            <input type="text" id="email" class="form-control">
-          </div>
-        </div>
-          
-        <div class="form-group md:px-10">
-          <label for="comentarios">Cuentanos sobre ti:</label>
-          <!-- <div class="md:w-128 md:h-64 md:flex md:justify-center"> -->
-            <textarea id="comentarios" class="md:w-128 md:h-56 form-control md:mx-auto"></textarea>
-          <!-- </div> -->
-        </div>
-        <button class="bg-orange-400 btn btn-primary" >Enviar Mensaje</button>
-      </form>
-
-    </div>
+  <dg-contact></dg-contact>
 
   
-  </div>
 </div>
 
 </template>
 
 <script>
 
+import DgContact from '@/components/DgContact'
 export default {
   name: 'Home',
   components: {
-
+    DgContact
   },
   methods:{
     

@@ -13,23 +13,23 @@
         <div class="mb-5 flex-center">
 
           <!-- Facebook -->
-          <a class="mx-5">
+          <a class="mx-3 md:mx-6" href="">
             <i class="fa fa-facebook-official fa-2x md:fa-4x" aria-hidden="true"> </i>
           </a>
           <!-- Twitter -->
-          <a class="mx-5">
+          <a class="mx-3 md:mx-6" href="">
             <i class="fa fa-twitter-square fa-2x md:fa-4x" aria-hidden="true"> </i>
           </a>
           <!-- Google +-->
-          <a class="mx-5">
+          <a class="mx-3 md:mx-6" href="">
             <i class="fa fa-google-plus-square fa-2x md:fa-4x" aria-hidden="true"> </i>
           </a>
           <!--Linkedin -->
-          <a class="mx-5">
+          <a class="mx-3 md:mx-6" href="">
             <i class="fa fa-linkedin-square fa-2x md:fa-4x" aria-hidden="true"> </i>
           </a>
           <!--Instagram-->
-          <a class="mx-5">
+          <a class="mx-3 md:mx-6" href="">
             <i class="fa fa-instagram fa-2x md:fa-4x" aria-hidden="true"> </i>
           </a>
           <!--Pinterest-->
