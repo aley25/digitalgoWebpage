@@ -14,16 +14,16 @@
 					<p class="text-white ">Llegar a mas clientes cada día es una tarea muy importante, permitenos ayudarte a crear 
 						una campaña de marketing excepcional en tus redes sociales.
 					</p>
-			</div>
+				</div>
 
-			<router-link :to="{ name: 'home' }" class="underline text-white text-xl">
-				<span>Solicite Servicio </span>
-			</router-link>
-		</div>
+				<router-link :to="{ name: 'home' }" class="underline text-white text-xl">
+					<span>Solicite Servicio </span>
+				</router-link>
+			</div>
 		
 		</div>
 
-		<div class="bg-green-1000 px-20 py-32 md:flex md:flex-row-reverse md:align-middle">
+		<div class="bg-green-1000 md:px-20 py-32 md:flex md:flex-row-reverse md:align-middle">
 
 			<div class="md:w-1/2 md:h-auto md:mr-6 md:m-auto transform hover:scale-125">
 				<img class="px-5" src="/images/3d.svg" alt="">
