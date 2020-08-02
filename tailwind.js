@@ -19,7 +19,7 @@ module.exports = {
         '128': '32rem'
       },
       fontFamily:{
-        'gill-sans': ['Optima', 'sans-serif'],
+        'gill-sans': ['Montserrat-Regular', 'sans-serif'],
         'lora' : ['Tangerine', 'serif']
       },
       height:{
@@ -55,6 +55,19 @@ module.exports = {
         '304': '76',
         '320': '80',
         '336': '84'
+      },
+      borderRadius:{
+        '75': '1.5rem'
+      },
+      keyframes:{
+        'rotationmail': {
+          '0%' : {transform: 'rotate(0deg)', 'justify-content': 'start'},
+          '50%' : {transform: 'rotate(30deg)', 'justify-content': 'end'},
+          '100%': {transform: 'rotate(45deg)', 'justify-content': 'end'}
+        }
+      },
+      animation: {
+        'mymail': 'rotationmail 4s linear infinite'
       }
     }
   },

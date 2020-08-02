@@ -1,56 +1,55 @@
 <template>
 
-<footer class="bg-gray-400">
+	<footer class="bg-gray-400">
 
-   <!-- Footer Elements -->
-  <div class="container">
+	<!-- Footer Elements -->
+	<div class="container">
 
-    <!-- Grid row-->
-    <div class="row">
+		<!-- Grid row-->
+		<div class="row">
 
-      <!-- Grid column -->
-      <div class="col-md-12 py-5">
-        <div class="mb-5 flex-center">
+		<!-- Grid column -->
+			<div class="col-md-12 py-5">
+				<div class="mb-5 flex-center">
+					<!-- Facebook -->
+					<a class="mx-3 md:mx-6" href="">
+						<i class="fa fa-facebook-official fa-2x md:fa-4x" aria-hidden="true"> </i>
+					</a>
+					<!-- Twitter -->
+					<a class="mx-3 md:mx-6" href="">
+						<i class="fa fa-twitter-square fa-2x md:fa-4x" aria-hidden="true"> </i>
+					</a>
+					<!-- Google +-->
+					<a class="mx-3 md:mx-6" href="">
+						<i class="fa fa-google-plus-square fa-2x md:fa-4x" aria-hidden="true"> </i>
+					</a>
+					<!--Linkedin -->
+					<a class="mx-3 md:mx-6" href="">
+						<i class="fa fa-linkedin-square fa-2x md:fa-4x" aria-hidden="true"> </i>
+					</a>
+					<!--Instagram-->
+					<a class="mx-3 md:mx-6" href="">
+						<i class="fa fa-instagram fa-2x md:fa-4x" aria-hidden="true"> </i>
+					</a>
+				<!--Pinterest-->
+				</div>
+			</div>
+		<!-- Grid column -->
 
-          <!-- Facebook -->
-          <a class="mx-3 md:mx-6" href="">
-            <i class="fa fa-facebook-official fa-2x md:fa-4x" aria-hidden="true"> </i>
-          </a>
-          <!-- Twitter -->
-          <a class="mx-3 md:mx-6" href="">
-            <i class="fa fa-twitter-square fa-2x md:fa-4x" aria-hidden="true"> </i>
-          </a>
-          <!-- Google +-->
-          <a class="mx-3 md:mx-6" href="">
-            <i class="fa fa-google-plus-square fa-2x md:fa-4x" aria-hidden="true"> </i>
-          </a>
-          <!--Linkedin -->
-          <a class="mx-3 md:mx-6" href="">
-            <i class="fa fa-linkedin-square fa-2x md:fa-4x" aria-hidden="true"> </i>
-          </a>
-          <!--Instagram-->
-          <a class="mx-3 md:mx-6" href="">
-            <i class="fa fa-instagram fa-2x md:fa-4x" aria-hidden="true"> </i>
-          </a>
-          <!--Pinterest-->
-        </div>
-      </div>
-      <!-- Grid column -->
+		</div>
+		<!-- Grid row-->
 
-    </div>
-    <!-- Grid row-->
+	</div>
+	<!-- Footer Elements -->
 
-  </div>
-  <!-- Footer Elements -->
+	<!-- Copyright -->
+	<div class="footer-copyright text-center py-3">© 2020 Copyright:
+		<a href="https://digitalgocr.com/"> DigitalGoCr.com</a>
+	</div>
+	<!-- Copyright -->
 
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://digitalgocr.com/"> DigitalGoCr.com</a>
-  </div>
-  <!-- Copyright -->
-
-</footer>
-<!-- Footer -->
+	</footer>
+	<!-- Footer -->
 
 </template>
 

@@ -1,9 +1,9 @@
 <template>
     <header class="fixed z-50 w-full">
-      <nav class="flex items-center justify-between flex-wrap p-3 fixed w-full z-10 top-0 md:bg-gray-500"
+      <nav class="flex items-center justify-between flex-wrap p-3 fixed w-full z-10 top-0 md:bg-gray-400"
       x-data="{ isOpen: false }"
       x-on:keydown.escape="isOpen = false"
-      x-bind:class="{ 'shadow-lg bg-gray-600' : isOpen , 'bg-gray-500' : !isOpen}">
+      x-bind:class="{ 'shadow-lg bg-gray-600' : isOpen , 'bg-gray-400' : !isOpen}">
 
 
           <div class="flex flex-row items-center pl-3 mr-4 mb-0 md:mr-10 align-top justify-start"> 
@@ -32,13 +32,14 @@
           class="pt-6 md:pt-0 list-reset md:flex justify-end  float-left"
           >
 
-            <li class="md:p-3">
+            <li class="md:p-3 sm:flex ">
               <a x-on:click="isOpen = false" href="" 
               v-scroll-to="{
                 el: '#portafolio',
                 duration: 300,
                 offset: -100,
-              }" class="inline-block py-2 px-4 text-black no-underline">Portafolio</a> 
+              }" class="btn inline-block sm:justify-start px-2 text-black no-underline hover:bg-gray-500 hover:border-black">
+              Portafolio</a> 
             </li>
 
             <li class="md:p-3">
@@ -47,8 +48,9 @@
                 el: '#nosotros',
                 duration: 300,
                 offset: -100,
-              }" 
-              class="inline-block py-2 px-4 text-black no-underline">Acerca de nosotros</a>
+              }"
+              class="btn inline-block sm:float-left px-2 text-black no-underline hover:bg-gray-500 hover:border-black">
+              Acerca de nosotros</a>
            </li>
 
             <li class="md:p-3">
@@ -56,9 +58,9 @@
                 el: '#contactenos',
                 duration: 300,
                 offset: -100,
-              }" class="inline-block py-2 px-4 text-black no-underline">Contactenos</a>
+              }" class="btn inline-block sm:float-left px-2 text-black no-underline hover:bg-gray-500 hover:border-black">
+              Contactenos</a>
             </li>
-        
 
           </ul>
       </div>
