@@ -1,6 +1,6 @@
 <template>
 
-	<footer class="bg-gray-400">
+	<footer class="bg-gray-100">
 
 	<!-- Footer Elements -->
 	<div class="container">
@@ -43,7 +43,7 @@
 	<!-- Footer Elements -->
 
 	<!-- Copyright -->
-	<div class="footer-copyright text-center py-3">© 2020 Copyright:
+	<div class="footer-copyright text-center py-3 font-heebo">© 2020 Copyright:
 		<a href="https://digitalgocr.com/"> DigitalGoCr.com</a>
 	</div>
 	<!-- Copyright -->
