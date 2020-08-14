@@ -49,22 +49,23 @@
 						el: '#portafolio',
 						duration: 300,
 						offset: -100,
-					}" class="btn inline-block sm:justify-start px-2 text-black no-underline hover:bg-gray-500 hover:border-black">
+					}" 
+					class="btn inline-block sm:justify-start px-2 text-black no-underline hover:bg-gray-500 hover:border-black">
 					Portafolio</a> 
 					</li>
 
-					<li class="md:p-3">
+					<li class="md:p-3 sm:flex">
 					<a x-on:click="isOpen = false" href="" 
 					v-scroll-to="{
 						el: '#nosotros',
 						duration: 300,
-						offset: -100,
+						offset: -50,
 					}"
 					class="btn inline-block sm:float-left px-2 text-black no-underline hover:bg-gray-500 hover:border-black">
 					Acerca de nosotros</a>
 					</li>
 
-					<li class="md:p-3">
+					<li class="md:p-3 sm:flex">
 					<a x-on:click="isOpen = false" href="" v-scroll-to="{
 						el: '#contactenos',
 						duration: 300,

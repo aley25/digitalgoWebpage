@@ -38,7 +38,8 @@ export default {
 
 <style>
 #app {
-  font-family: 'Heebo', sans-serif;
+	font-weight: bold;
+	font-family: 'Heebo', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
