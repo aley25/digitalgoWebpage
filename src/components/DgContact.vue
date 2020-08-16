@@ -11,7 +11,7 @@
             
             <h1 class="text-4xl mb-10 md:mb-10 text-black font-heebo">Contactenos</h1>
 
-            <form class="contact-form" @submit.prevent="sendEmail">
+            <form class="contact-form" @submit.prevent="sendEmail" data-netlify="true">
                 
                 <div class="form-group md:px-5 pb-3 font-heebo">
                     <input type="text" id="nombre" placeholder="Nombre" class="h-12 pl-5 form-control border rounded-full shadow-lg" 
