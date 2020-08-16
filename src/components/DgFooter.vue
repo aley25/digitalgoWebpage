@@ -1,6 +1,6 @@
 <template>
 
-	<footer class="bg-gray-100">
+	<footer class="bg-white">
 
 	<!-- Footer Elements -->
 	<div class="container">

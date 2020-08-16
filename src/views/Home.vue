@@ -7,10 +7,9 @@
 
 			<div class="flex flex-col justify-center align-middle md:w-1/2">
 				<h1 class="font-black  text-3xl text-blue-600 mb-6">Digital Go, Su mejor solución</h1>
-				<p class="font-bold  px-10 mb-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-					Possimus assumenda neque cumque. Eius iste illum enim vel numquam placeat, 
-					itaque qui fugiat nulla eligendi, adipisci tempora officia laborum doloribus 
-					voluptate.
+				<p class="font-bold  px-10 mb-10">Somos una empresa responsable que busca ayudar a sus clientes
+					a conseguir mas ventas y poder situarse en el mercado de una mejor forma mediante desarrollo de paginas web y 
+					un trabajo de marketing que va a hacer que su empresa sea mucho mas visible para las personas.
 				</p>
 				<div class="justify-center">
 					<button x-on:click="isOpen = false" href="" 
@@ -33,21 +32,30 @@
 
 <!--:style="{ backgroundImage: 'url(' + require('@/assets/images/white-gradient.jpg') + ')' }"  -->
 	<div class="justify-center py-16 md:pt-16 h-auto bg-cover bg-white" id="portafolio"  >
-		<div class="px-10">
-		<h1 class=" text-4xl font-black mb-5 text-blue-600">Servicios</h1>
-		<h3 class=" text-xl">Comprometidos con nuestros clientes, se brindan los servicios de campaña de marketing, </h3>
+		<div class="px-6 md:px-32">
+			<h1 class="text-4xl font-black mb-5 text-blue-600">Servicios</h1>
+			<h3 class="text-xl">Comprometidos con nuestros clientes, se brindan los servicios de campañas de marketing y desarrollo de páginas web
+				con las últimas tecnologías.
+			</h3>
 		</div>
-		<div class=" py-6 md:flex md:flex-row">
 
-			<div class="md:w-1/2 md:flex md:justify-center md:m-auto transform hover:scale-125">
-				<img class="md:w-128 md:h-auto" src="/images/phone.png" alt="">
-			</div>
 		
-			<div class="md:justify-center md:align md:w-1/2 md:flex md:flex-col px-10">
+
+		<div class="md:px-20 py-8 md:flex  md:align-middle">
+
+			<div class="md:w-1/2 md:h-auto md:mr-6 md:m-auto">
+				<img class="px-5" src="@/assets/images/devbackground.jpg" alt="">
+			</div>
+
+			<div class="md:justify-center md:align md:w-1/2 md:flex md:flex-col">
 				<div class="mb-10 mx-5">
-					<h1 class="text-3xl mt-5 text-blue-600 mb-6  font-black ">Marketing Digital</h1>
-					<p class="text-black ">Llegar a mas clientes cada día es una tarea muy importante, permitenos ayudarte a crear 
-						una campaña de marketing excepcional en tus redes sociales.
+
+					<h1 class="text-3xl mt-5 text-blue-600 mb-6 font-black">Desarrollo Web</h1>
+
+					<p class="text-black ">
+						Desarrollamos tu página web para dar a conocer tu empresa
+						a todos tus clientes y gestión de la información, con las últimas tecnologías
+						se genera una página web para darse a ver a sus clientes de una manera profesional.
 					</p>
 				</div>
 
@@ -64,24 +72,17 @@
 		
 		</div>
 
-		<div class="md:px-20 py-32 md:flex md:flex-row-reverse md:align-middle">
+		<div class="md:px-20 md:flex md:flex-row-reverse">
 
-			<div class="md:w-1/2 md:h-auto md:mr-6 md:m-auto transform hover:scale-125">
-				<img class="px-5" src="/images/3d.svg" alt="">
+			<div class="md:w-1/2 md:flex md:justify-center md:m-auto">
+				<img class="md:w-128 md:h-auto" src="@/assets/images/marketing.png" alt="">
 			</div>
-
+		
 			<div class="md:justify-center md:align md:w-1/2 md:flex md:flex-col">
 				<div class="mb-10 mx-5">
-
-					<h1 class="text-3xl mt-5 text-blue-600 mb-6  font-black">Desarrollo Web</h1>
-
-					<p class="text-black ">Desarrollamos tu página web para dar a conocer tu empresa
-					
-						a todos tus clientes y gestión de la información
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-						Dolore, unde in voluptatum impedit dolorem ipsa consequatur ipsum 
-						possimus delectus explicabo consequuntur architecto vero sit voluptatibus 
-						perferendis nobis praesentium illum accusantium?
+					<h1 class="text-3xl mt-5 text-blue-600 mb-6 font-black">Marketing Digital</h1>
+					<p class="text-black ">Llegar a mas clientes cada día es una tarea muy importante, permitenos ayudarte a crear 
+						una campaña de marketing excepcional en tus redes sociales.
 					</p>
 				</div>
 
@@ -179,7 +180,12 @@ export default {
 
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+
+
+*{
+	font-family: 'Heebo', sans-serif;
+}
 .gradientegris{
   background: rgb(115,115,115);
   background: linear-gradient(180deg, rgba(115,115,115,1) 0%, rgba(203,213,224,1) 100%);
@@ -201,8 +207,4 @@ export default {
 	background: linear-gradient(153deg, rgba(255,255,255,1) 55%, rgba(238,238,238,1) 100%);
 }
 
-*{
-	font-weight: bold;
-	font-family: 'Heebo', sans-serif;
-}
 </style>

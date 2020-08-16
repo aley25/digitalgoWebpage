@@ -1,6 +1,6 @@
 <template>
 
-<div class="justify-center px-8 py-16 bg-gray-100" id="contactenos">
+<div class="justify-center px-8 py-16 bg-white" id="contactenos">
     <div class="md:flex flex-row">
         <div class="hidden md:w-1/2 md:flex justify-center" id="mailbox">
             <div class="md:w-1/2">            
@@ -8,24 +8,26 @@
             </div>
         </div>
         <div class="md:w-1/2">
-            <h1 class="text-4xl mb-10 md:mb-10 text-black font-heebo">Contactenos</h1>
-            <form class="contact-form" @submit.prevent="sendEmail">
             
+            <h1 class="text-4xl mb-10 md:mb-10 text-black font-heebo">Contactenos</h1>
+
+            <form class="contact-form" @submit.prevent="sendEmail">
                 
                 <div class="form-group md:px-5 pb-3 font-heebo">
-                    <input type="text" id="nombre" placeholder="Nombre" class="h-12 pl-5 form-control border rounded-full" 
+                    <input type="text" id="nombre" placeholder="Nombre" class="h-12 pl-5 form-control border rounded-full shadow-lg" 
                     v-model="nombre">
                 </div>
                     
                 <div class="form-group md:px-5 pb-3 font-heebo">
-                    <input type="text" id="email" placeholder="Email" class="h-12 pl-5 form-control border rounded-full" 
+                    <input type="text" id="email" placeholder="Email" class="h-12 pl-5 form-control border rounded-full shadow-lg" 
                     v-model="correo">
                 </div>
                 
 
                 
                 <div class="form-group md:px-5 pb-3 font-heebo">
-                    <textarea id="comentarios" placeholder="Cuentanos sobre ti" class="pt-8 h-24 pl-5  md:h-32 mb-5 form-control border rounded-75" 
+                    <textarea id="comentarios" placeholder="Cuentanos sobre ti" 
+                    class="pt-8 h-24 pl-5  md:h-32 mb-5 form-control border rounded-75 shadow-lg" 
                     v-model="mensaje"></textarea>
                 </div>
                 
@@ -96,6 +98,7 @@ export default {
 #mailbox{
     animation: movement 4s infinite;
 }
+
 
 
 </style>
