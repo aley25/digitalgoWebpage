@@ -4,7 +4,7 @@
 			class="flex items-center justify-between flex-wrap p-3 fixed w-full z-10 top-0"
 			x-data="{ isOpen: false }"
 			x-on:keydown.escape="isOpen = false"
-			x-bind:class="{ 'shadow-lg bg-gray-400' : isOpen , 'bg-white' : !isOpen}">
+			x-bind:class="{ 'shadow-lg bg-gray-400' : isOpen}">
 
 
 			<div class="flex flex-row items-center pl-3 mr-4 mb-0 md:mr-10 align-top justify-start"> 
@@ -103,6 +103,7 @@ export default {
 
 	mounted : function() {
 		window.addEventListener('scroll', this.handleScroll)
+		this.viewOfTopPage = true
 	},
 	beforeDestroy : function () {
 		window.removeEventListener('scroll', this.handleScroll)
@@ -126,7 +127,5 @@ export default {
 
 
 <style scoped>
-.fondot{
-	background: transparent;
-}
+
 </style>
