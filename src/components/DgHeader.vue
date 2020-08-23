@@ -10,7 +10,14 @@
 			<div class="flex flex-row items-center pl-3 mr-4 mb-0 md:mr-10 align-top justify-start"> 
 				<img src="/images/DigitalGoWhite.svg" alt="" class="w-10 h-10 mr-1">
 				<span class="font-semibold text-sm tracking-tight text-black md:text-2xl">
-				Digital Go
+				<a x-on:click="isOpen = false" href="" 
+					v-scroll-to="{
+						el: '#landing',
+						duration: 300,
+						offset: -100,
+					}" class="no-underline">
+					Digital Go</a> 
+				
 				</span>
 			</div>
 
