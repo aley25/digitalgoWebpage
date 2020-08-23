@@ -1,7 +1,7 @@
 <template>
 	<header class="fixed z-50 w-full">
-		<nav :class="{'bg-transparent': viewOfTopPage}"  v-on:scroll.passive="handleScroll"
-			class="flex items-center justify-between flex-wrap p-3 fixed w-full z-10 top-0 bg-white"
+		<nav v-bind:class="{'bg-transparent' : viewOfTopPage, 'bg-white' : !viewOfTopPage}"
+			class="flex items-center justify-between flex-wrap p-3 fixed w-full z-10 top-0"
 			x-data="{ isOpen: false }"
 			x-on:keydown.escape="isOpen = false"
 			x-bind:class="{ 'shadow-lg bg-gray-400' : isOpen , 'bg-white' : !isOpen}">
@@ -17,7 +17,7 @@
 			<button
 			x-on:click="isOpen = !isOpen"
 			type="button"
-			class="block md:hidden px-2 text-black hover:text-white focus:outline-none focus:text-white"
+			class="block md:hidden px-2 text-black hover:text-blue-500 focus:outline-none "
 			x-bind:class="{ 'transition transform-180': isOpen }"
 			>Menú</button>
 
@@ -92,6 +92,7 @@ export default {
 			viewOfTopPage : true
 		}
 	},
+
 	props: {
 			links: {
 			type: Array,
@@ -100,15 +101,22 @@ export default {
 
 	},
 
+	mounted : function() {
+		window.addEventListener('scroll', this.handleScroll)
+	},
+	beforeDestroy : function () {
+		window.removeEventListener('scroll', this.handleScroll)
+	},
+	
 	methods: {
 		handleScroll(){
 			// when the user scrolls, check the pageYOffset
 			if(window.pageYOffset>0){
 				// user is scrolled
-				if(this.view.atTopOfPage) this.atTopOfPage = false
+				this.viewOfTopPage = false
 			}else{
 				// user is at top of page
-				if(!this.view.atTopOfPage) this.atTopOfPage = true
+				this.viewOfTopPage = true
 			}
 		}
 	}
@@ -118,4 +126,7 @@ export default {
 
 
 <style scoped>
+.fondot{
+	background: transparent;
+}
 </style>
