@@ -1,7 +1,7 @@
 <template>
 <div class="font-lora">
 
-	<div id="landing" class="flex justify-center pt-12 md:mt-26 md:pt-16 h-screen w-screen" :style="{ backgroundImage: 'url(' + require('@/assets/images/bannerbg.png') + ')' }">
+	<div id="landing" class="flex justify-center pt-12 md:mt-26 md:pt-16 h-screen" :style="{ backgroundImage: 'url(' + require('@/assets/images/bannerbg.png') + ')' }">
 		
 		<div class="flex flex-col justify-center md:flex-row py-6">
 

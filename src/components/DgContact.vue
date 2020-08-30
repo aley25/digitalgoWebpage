@@ -44,6 +44,11 @@
 <script>
 import emailjs from 'emailjs-com';
 
+
+
+
+
+
 export default {
     name:"DgContact",
     data: function (){
@@ -51,6 +56,19 @@ export default {
             correo:"",
             nombre:"",
             mensaje:"",
+
+            //Object type sweetalert to reused whenever is necessary
+            Toast : this.$swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                onOpen: (toast) => {
+                    toast.addEventListener('mouseenter', this.$swal.stopTimer)
+                    toast.addEventListener('mouseleave', this.$swal.resumeTimer)
+                }
+            })
         }
     },
     methods:{
@@ -62,16 +80,39 @@ export default {
                 "from_name" : "Digital GO !!!",
                 "reply_to": "alpizardavid99@gmail.com"
             }
-            console.log(this.correo)
+            var self = this;
             if(objeto.email != ""){
                 emailjs.send('gmail', 'template_rvrXzJSe', objeto, 'user_TpybzVHiQ3yRHyYswPd0g')
                 .then(function(response) {
-                    console.log('SUCCESS!', response.status, response.text);
+                    console.log('SUCCESS!', response.status, response.text);                    
+                    self.correo = '';
+                    self.nombre = '';
+                    self.mensaje = '';
+                    self.successAlert('Correo enviado Correctamente');
+                    
                 }, function(error) {
                     console.log('FAILED...', error);
+                    self.failAlert('Error al enviar el correo, intentelo nuevamente.');
                 });
+
+             
+            }else{
+                self.failAlert('Es necesario un correo para poder enviar la información, intentelo nuevamente.');
             }
-        }    
+            
+        },
+        successAlert(message){
+            this.Toast.fire({
+                icon: 'success',
+                title: message
+            });
+        },
+        failAlert(message){
+            this.Toast.fire({
+                icon: 'error',
+                title: message
+            });
+        }
     }
 }
 </script>
@@ -97,6 +138,10 @@ export default {
 
 #mailbox{
     animation: movement 4s infinite;
+}
+
+#marginObjects{
+    margin: 3px;
 }
 
 
