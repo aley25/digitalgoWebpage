@@ -1,7 +1,7 @@
 <template>
 <div class="font-lora">
 
-	<div id="landing" class="flex justify-center pt-12 md:mt-26 md:pt-16 h-screen" :style="{ backgroundImage: 'url(' + require('@/assets/images/bannerbg.png') + ')' }">
+	<div id="landing" class="flex justify-center pt-12 md:mt-26 md:pt-16 h-screen md:h-auto lg:h-screen" :style="{ backgroundImage: 'url(' + require('@/assets/images/bannerbg.png') + ')' }">
 		
 		<div class="flex flex-col justify-center md:flex-row py-6">
 
@@ -26,7 +26,6 @@
 				<img class="md:w-9/12 md:h-auto" src="@/assets/images/background.svg" alt="Background">
 			</div>
 
-			
 		</div>
 	</div>
 
