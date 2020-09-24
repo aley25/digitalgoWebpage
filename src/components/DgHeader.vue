@@ -1,7 +1,7 @@
 <template>
 	<header class="fixed z-50 w-full">
 		<nav v-bind:class="{'bg-transparent' : viewOfTopPage, 'bg-white' : !viewOfTopPage}"
-			class="flex items-center justify-between flex-wrap p-3 fixed w-full z-10 top-0 px-16"
+			class="flex items-center justify-between flex-wrap p-3 fixed w-full z-10 top-0 lg:px-16"
 			x-data="{ isOpen: false }"
 			x-on:keydown.escape="isOpen = false"
 			x-bind:class="{ 'shadow-lg bg-gray-400' : isOpen}">
