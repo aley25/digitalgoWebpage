@@ -10,7 +10,7 @@ import 'sweetalert2/dist/sweetalert2.min.css';
 
 const VueScrollTo = require("vue-scrollto");
 Vue.use(VueScrollTo);
-Vue.use(VueSweetalert2);
+Vue.use(VueSweetalert2);  
 
 
 Vue.config.productionTip = false
