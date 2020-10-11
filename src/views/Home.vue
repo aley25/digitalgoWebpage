@@ -31,6 +31,7 @@
 
 <!--:style="{ backgroundImage: 'url(' + require('@/assets/images/white-gradient.jpg') + ')' }"  -->
 	<div class="justify-center py-16 md:pt-16 h-auto bg-cover bg-white" id="portafolio"  >
+		
 		<div class="px-6 md:px-32">
 			<h1 class="text-4xl font-black mb-5 text-blue-600">Servicios</h1>
 			<h3 class="text-xl">Comprometidos con nuestros clientes, se brindan los servicios de campañas de marketing y desarrollo de páginas web
@@ -40,7 +41,7 @@
 
 		
 
-		<div class="md:px-20 py-8 md:flex  md:align-middle">
+		<div class="md:px-20 py-8 md:flex md:align-middle " >
 
 			<div class="md:w-1/2 md:h-auto md:mr-6 md:m-auto">
 				<img class="px-5" src="@/assets/images/devbackground.jpg" alt="">
@@ -106,7 +107,7 @@
 
 		<div class="md:flex">
 			
-			<div class="bg-white md:w-1/3 py-5 my-4 md:mx-3 border border-blue-300 rounded-lg shadow-md">
+			<div class="bg-white md:w-1/3 py-5 my-4 md:mx-3 border border-blue-300 rounded-lg shadow-md" id="divinfo">
 
 				<h1 class="text-lg mb-5 text-blue-600 ">Innovadores</h1>
 					<p class="mx-3 justify-center ">En Digital Go buscamos el promover la digitalización de todas las empresas ya sean pequeñas, medianas
@@ -120,7 +121,7 @@
 
 			</div>
 
-			<div class="bg-white md:w-1/3 py-5 my-4 md:mx-3 md:h-auto border border-blue-300 rounded-lg shadow-md">
+			<div class="bg-white md:w-1/3 py-5 my-4 md:mx-3 md:h-auto border border-blue-300 rounded-lg shadow-md" id="divinfo">
 
 				<h1 class="text-lg mb-5 text-blue-600 ">Nosotros</h1>
 				<p class="mx-3 justify-center ">Somos una empresa de Marketing Digital 
@@ -134,7 +135,7 @@
 
 			</div>
 
-			<div class="bg-white md:w-1/3 py-5 my-4 md:mx-3 border border-blue-300 rounded-lg shadow-md">
+			<div class="bg-white md:w-1/3 py-5 my-4 md:mx-3 border border-blue-300 rounded-lg shadow-md" id="divinfo">
 
 				<h1 class="text-lg mb-5 text-blue-600 ">Metas</h1>
 
@@ -204,6 +205,11 @@ export default {
 #portafolio{
 	background: rgb(255,255,255);
 	background: linear-gradient(153deg, rgba(255,255,255,1) 55%, rgba(238,238,238,1) 100%);
+}
+
+#divinfo:hover{
+	transform: scale(1.1);
+	transition: transform .5s; /* Animation */
 }
 
 </style>
