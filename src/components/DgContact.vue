@@ -9,7 +9,7 @@
         </div>
         <div class="md:w-1/2">
             
-            <h1 class="text-4xl mb-10 md:mb-10 text-black font-heebo">Contactenos</h1>
+            <h1 class="text-4xl mb-10 md:mb-10 text-blue-600 font-heebo ">Contactenos</h1>
 
             <form class="contact-form" @submit.prevent="sendEmail" data-netlify="true">
                 

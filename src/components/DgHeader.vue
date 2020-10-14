@@ -7,7 +7,7 @@
 			x-bind:class="{ 'shadow-lg bg-gray-400' : isOpen}">
 
 
-			<div class="flex flex-row items-center pl-3 mr-4 mb-0 md:mr-10 align-top justify-start"> 
+			<div class="flex flex-row items-center pl-3 mr-4 mb-0 md:mr-10 align-top justify-start cursor-pointer"> 
 				<img src="/images/DigitalGoWhite.svg" alt="" class="w-10 h-10 mr-1">
 				<span class="font-semibold text-sm tracking-tight text-black md:text-2xl">
 				<a x-on:click="isOpen = false" href="" 
@@ -58,7 +58,7 @@
 						offset: -100,
 					}" 
 					class="btn inline-block sm:justify-start px-2 text-black no-underline hover:bg-gray-500 hover:border-black">
-					Portafolio</a> 
+					Servicios</a> 
 					</li>
 
 					<li class="md:p-3 sm:flex">

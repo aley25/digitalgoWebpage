@@ -19,10 +19,6 @@
 					<a class="mx-3 md:mx-6" href=""  target="_blank">
 						<i class="fa fa-twitter-square fa-2x md:fa-4x" aria-hidden="true"> </i>
 					</a>
-					<!-- Google +-->
-					<a class="mx-3 md:mx-6" href=""  target="_blank">
-						<i class="fa fa-google-plus-square fa-2x md:fa-4x" aria-hidden="true"> </i>
-					</a>
 					<!--Linkedin -->
 					<a class="mx-3 md:mx-6" href=""  target="_blank">
 						<i class="fa fa-linkedin-square fa-2x md:fa-4x" aria-hidden="true"> </i>
