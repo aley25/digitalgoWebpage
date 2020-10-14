@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="bg-white md:w-1/3 py-5 my-4 md:mx-3 border border-blue-300 rounded-lg shadow-md"
+		class="bg-white md:w-1/3 py-5 my-4 md:mx-3 border border-blue-300 rounded-lg shadow-md cursor-pointer"
 		id="divinfo"
 	>
 		<h1 class="text-lg mb-5 text-blue-600">{{skill.title}}</h1>
